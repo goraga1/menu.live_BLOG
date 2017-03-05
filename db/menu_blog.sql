@@ -25,7 +25,6 @@ SET time_zone = "+00:00";
 --
 -- Структура таблицы `wp_commentmeta`
 --
-DROP TABLE `wp_commentmeta`
 
 CREATE TABLE `wp_commentmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
@@ -63,7 +62,6 @@ INSERT INTO `wp_commentmeta` (`meta_id`, `comment_id`, `meta_key`, `meta_value`)
 --
 -- Структура таблицы `wp_comments`
 --
-DROP TABLE `wp_comments`
 
 CREATE TABLE `wp_comments` (
   `comment_ID` bigint(20) UNSIGNED NOT NULL,
@@ -102,7 +100,6 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 --
 -- Структура таблицы `wp_links`
 --
-DROP TABLE `wp_links`
 
 CREATE TABLE `wp_links` (
   `link_id` bigint(20) UNSIGNED NOT NULL,
@@ -125,7 +122,6 @@ CREATE TABLE `wp_links` (
 --
 -- Структура таблицы `wp_options`
 --
-DROP TABLE `wp_options`
 
 CREATE TABLE `wp_options` (
   `option_id` bigint(20) UNSIGNED NOT NULL,
@@ -307,8 +303,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 --
 -- Структура таблицы `wp_postmeta`
 --
-
-DROP TABLE `wp_postmeta`
 
 CREATE TABLE `wp_postmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
@@ -1258,7 +1252,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 --
 -- Структура таблицы `wp_posts`
 --
-DROP TABLE `wp_posts`
 
 CREATE TABLE `wp_posts` (
   `ID` bigint(20) UNSIGNED NOT NULL,
@@ -1469,7 +1462,6 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 --
 -- Структура таблицы `wp_termmeta`
 --
-DROP TABLE `wp_termmeta`
 
 CREATE TABLE `wp_termmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
@@ -1483,7 +1475,6 @@ CREATE TABLE `wp_termmeta` (
 --
 -- Структура таблицы `wp_terms`
 --
-DROP TABLE `wp_terms`
 
 CREATE TABLE `wp_terms` (
   `term_id` bigint(20) UNSIGNED NOT NULL,
@@ -1527,7 +1518,6 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 --
 -- Структура таблицы `wp_term_relationships`
 --
-DROP TABLE `wp_term_relationships`
 
 CREATE TABLE `wp_term_relationships` (
   `object_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
@@ -1743,7 +1733,6 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 --
 -- Структура таблицы `wp_term_taxonomy`
 --
-DROP TABLE `wp_term_taxonomy`
 
 CREATE TABLE `wp_term_taxonomy` (
   `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL,
@@ -1789,7 +1778,6 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 --
 -- Структура таблицы `wp_usermeta`
 --
-DROP TABLE `wp_usermeta`
 
 CREATE TABLE `wp_usermeta` (
   `umeta_id` bigint(20) UNSIGNED NOT NULL,
@@ -1830,7 +1818,6 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 --
 -- Структура таблицы `wp_users`
 --
-DROP TABLE `wp_users`
 
 CREATE TABLE `wp_users` (
   `ID` bigint(20) UNSIGNED NOT NULL,
